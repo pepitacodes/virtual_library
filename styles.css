@@ -9,7 +9,7 @@ header {
     width: 100%;
     display: inline-block;
     margin: auto;
-    background-image: url(/assets/nav_background.png);
+    background-image: url(main/assets/nav_background.png);
     background-size: 50%;
 }
 nav {
