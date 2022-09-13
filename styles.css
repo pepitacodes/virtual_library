@@ -1,0 +1,124 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    background-image: url(/assets/nav_background.png);
+    background-size: 50%;
+}
+nav {
+    opacity: 0.8;
+    width: 100%;
+}
+h1 {
+    padding: 25px;
+    letter-spacing: 0.5rem;
+    text-shadow: 5.5px 2px 0.45px #b54e3d;
+    background-color: #52b7885e; 
+    color: #f1ce05;
+    border: 3.3px ridge gold;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+}
+h2 {
+    color: black;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+button {
+    margin: 1rem 1rem;
+    padding: 15px;
+    line-height: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #536651;
+    color: #F1f1f1;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 4px solid rgba(255, 166, 0, 0.772);
+    cursor: pointer;
+}
+button:hover {
+    background-color: #FFFFFF;
+    color: #536651;
+    box-shadow: 3px 2px 22px 1px rgba(1, 1, 1, 0.906);
+}
+form, label {
+    display: block;
+    margin: auto 0;
+}
+label, input, select {
+    margin: 0.3rem auto;
+}
+input, select {
+    line-height: 25px;
+}
+section {
+    margin: 2rem;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0;
+    margin-top: 1rem!important;
+    padding: 20px;
+    line-height: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba(34, 91, 16, 0.802);
+    color: white ;
+    font-size: 15px;
+}
+input[type="submit"]:hover {
+    background-color: rgba(255, 166, 0, 0.495);
+    color: rgb(7, 6, 6) ;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 2px;
+    text-align: center;
+    padding: 10px;
+}
+.card {
+    text-align: center;
+}
+.card-body {
+    height: 300px;
+    background-color: rgb(242, 231, 212);
+    margin: 10px;
+}
+.card-title {
+    font-size: 1.3rem;
+}
+.card-subtitle {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    h2 {
+    text-align: center;
+    }
+    form {
+       margin: auto;
+    }
+}

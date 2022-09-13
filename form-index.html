@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<title>Biblioteca Virtual</title>
+</head>
+<body>
+<header>
+<h1>Mi Biblioteca Virtual</h1>
+</header>
+    <nav>
+        <a href="index.html"><button>Mi Biblioteca</button></a>
+    </nav>
+    <section>  
+        <h2>Agregar libro a tu Biblioteca:</h2>
+        <form id="form">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label>Autor:</label>
+            <input type="text" name="autor" id="autor" required > 
+            <label>Genero:</label>
+            <select id="generos"></select>
+            <label>Imagen: (link) </label>
+            <input type="text" name="img" id="img"> 
+            <input type="submit" name="submit" value="Agregar" >
+            </form>
+    </section>
+    <script src="globales.js"></script>   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+    <script src="form-main.js"></script>
+   
+</body>
+<footer></footer>
+</html>

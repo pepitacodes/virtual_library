@@ -1,0 +1,1 @@
+const generos = ["Terror", "Ciencia Ficcion", "Poesia", "Historia", "Filosofia", "Novela"];

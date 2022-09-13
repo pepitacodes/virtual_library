@@ -1,0 +1,21 @@
+[
+    { 
+        "nombre":"Harry Potter",
+        "autor": "J.K. Rowling",
+        "genero": "Fantasia",
+        "img": "https://cdn2.iconfinder.com/data/icons/rpg-fantasy-game-skill-ui/512/game_skill_ui_spell_book_magic-128.png"
+    },
+    { 
+        "nombre": "Fly Away Home",
+        "autor": "Eve Bunting",
+        "genero": "Novela",
+        "img": "https://cdn2.iconfinder.com/data/icons/rpg-fantasy-game-skill-ui/512/game_skill_ui_spell_book_magic-128.png"
+
+    },
+    { 
+        "nombre": "100 años de soledad",
+        "autor": "Garcia Marquez",
+        "genero": "Novela",
+        "img": "https://cdn2.iconfinder.com/data/icons/rpg-fantasy-game-skill-ui/512/game_skill_ui_spell_book_magic-128.png"
+    }
+]
