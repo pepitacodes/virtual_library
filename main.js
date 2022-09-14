@@ -1,4 +1,4 @@
-git
+
 
 class Libro {
     constructor (nombre,autor,genero,img) {
