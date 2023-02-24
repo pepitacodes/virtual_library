@@ -1,6 +1,8 @@
 body {
     background-color: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(rgb(117 5 224 / 20%), rgb(255 0 0 / 38%)) ,url(assets/nav_background.png);
+    background-size: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -9,18 +11,18 @@ header {
     width: 100%;
     display: inline-block;
     margin: auto;
-    background-image: url(assets/nav_background.png);
-    background-size: 50%;
+    height: 200px;
 }
 nav {
     opacity: 0.8;
     width: 100%;
 }
 h1 {
+    font-family: 'Raleway', sans-serif;
     padding: 25px;
     letter-spacing: 0.5rem;
-    text-shadow: 5.5px 2px 0.45px #b54e3d;
-    background-color: #52b7885e; 
+    text-shadow: -1px -1px #fbe472, 4px 4px #2e0101;
+    background-color: #062218c7;
     color: #f1ce05;
     border: 3.3px ridge gold;
     max-width: 500px;
