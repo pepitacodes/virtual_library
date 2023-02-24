@@ -1,7 +1,7 @@
 body {
     background-color: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-image: linear-gradient(rgb(117 5 224 / 20%), rgb(255 0 0 / 38%)) ,url(assets/nav_background.png);
+    background-image: linear-gradient(rgb(117 5 224 / 20%), rgb(255 0 0 / 38%)) ,url(./assets/nav_background.png);
     background-size: 100%;
     margin: 0;
     padding: 0;
