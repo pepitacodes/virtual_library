@@ -1,7 +1,8 @@
 body {
-
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgb(7 6 6 / 75%);
+    background: rgb(189,187,217);
+    background: rgb(242, 231, 212);
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -21,83 +22,111 @@ h1 {
     font-family: 'Raleway', sans-serif;
     padding: 25px;
     letter-spacing: 0.5rem;
-    text-shadow: 1.5px 1.5px #fbe472, 5px 5px #2e0101;
-    background-color: #03311ec2;
+    text-shadow: 1px 1px #fbe472, 5px 5px #2e0101;
+    background-color: #5055537a;
     color: #f1ce05;
     border: 3.3px ridge gold;
     max-width: 600px;
     margin: 2rem auto;
     text-align: center;
     font-size: 40px;
+    position: relative;
+    align-self: center;
+    margin-top: 0;
 }
 h2 {
-    color: rgb(242, 231, 212);
+    font-size: 2rem;
+    text-indent: 15px;
 }
 img {
     max-width: 100%;
     max-height: 100%;
 }
 button {
+    width: 300px;
+    height: 50px;
+    position: absolute;
     margin: 1rem 1rem;
     padding: 15px;
     line-height: 10px;
     font-family: 'Poppins', sans-serif;
-    background-color: #626766;
-    color: #F1f1f1;
-    font-size: 20px;
-    border-radius: 30px;
-    border: 4px solid rgb(224 246 56 / 83%);
+    font-size: 25px;
+    border-radius: 10px;
     cursor: pointer;
+    top: 90px;
 }
 button:hover {
     background-color: #FFFFFF;
-    color: #536651;
     box-shadow: 3px 2px 22px 1px rgba(1, 1, 1, 0.906);
-}
+  }
+  input[type="submit"] {
+    width: 300px;
+    height: 50px;
+    margin: 1rem 1rem;
+    padding: 15px;
+    line-height: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 90px;
+  }
 form, label {
     display: block;
-    margin: auto 0;
+    margin: 10px;
 }
 label, input, select {
     margin: 0.3rem auto;
+    font-size: 1.5rem;
+    border: 1px solid rgba(57, 56, 56, 0.519);
+    border-radius: 10px;
 }
 input, select {
-    line-height: 25px;
+    line-height: 30px;
+    width: 300px;
+    height: 60px;
 }
 section {
     margin: 2rem;
+    width: 100%;
+}
+.section-form {
+    font-weight: 900;
 }
 input[type="submit"] {
     display: block;
     margin: 0;
     margin-top: 1rem!important;
     padding: 20px;
+    width: 300px;
+    height: 50px;
     line-height: 10px;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: rgba(34, 91, 16, 0.802);
-    color: white ;
-    font-size: 15px;
+    top: 90px;
 }
 input[type="submit"]:hover {
-    background-color: rgba(255, 166, 0, 0.495);
-    color: rgb(7, 6, 6) ;
+    background-color: #FFFFFF;
+    box-shadow: 3px 2px 22px 1px rgba(1, 1, 1, 0.906);
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 2px;
-    text-align: center;
+    grid-template-columns: repeat(6, 0.5fr) ;
+    grid-template-rows: repeat(6, 2fr);
+    justify-items: center;
     padding: 10px;
-}
+  }
+  
 .card {
     text-align: center;
+    width: fit-content;
 }
 .card-body {
-    height: 300px;
-    background-color: rgb(242, 231, 212);
+    width: fit-content;
+    max-width: 200px;
     opacity: 0.9;
     margin: 10px;
 }
@@ -118,9 +147,6 @@ input[type="submit"]:hover {
     .card-container {
         display: flex;
         flex-direction: column;
-    }
-    h2 {
-    text-align: center;
     }
     form {
        margin: auto;
