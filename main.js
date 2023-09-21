@@ -1,5 +1,3 @@
-
-
 class Libro {
     constructor (nombre,autor,genero,img) {
     this.nombre = nombre;
@@ -16,9 +14,7 @@ class Libro {
       return libro;
     }
 } 
-
 const libros = []
-
 fetch("data/libros.json")
 .then(response => response.json())
 .then(data => {
@@ -30,7 +26,6 @@ fetch("data/libros.json")
 .catch(error => console.log(error));
 
 
-
 function renderLibros(libros){
   const librosAgregados = JSON.parse(localStorage.getItem("librosAgregados"));
   if (librosAgregados){
@@ -38,19 +33,22 @@ function renderLibros(libros){
       libros.push(new Libro(libro.nombre,libro.autor,libro.genero, libro.img));
     }
   }
-  for (const libro of libros) {
+  libros.forEach(libro => {
+    const div = document.createElement("div");
+    div.classList.add("card");
+    div.innerHTML = `
+      <div class="card-body">
+        <img src="${libro.img}"/>
+        <h5 class="card-title">${libro.nombre}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${libro.autor}</h6>
+        <p class="card-text">${libro.genero}</p>
+      </div>
+    `;
+    document.getElementById("card-container").appendChild(div);
+  });
+}
 
-    document.getElementById("card-container").innerHTML += `  
-    <div class="card">
-        <div class="card-body">
-            <img src="${libro.img}"/>
-            <h5 class="card-title">${libro.nombre}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${libro.autor}</h6>
-            <p class="card-text">${libro.genero}</p>
-        </div>
-        </div>         
-        `;  } 
-} 
+
 
 
 
