@@ -38,10 +38,7 @@ h2 {
     font-size: 2rem;
     text-indent: 15px;
 }
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
+
 button {
     width: 300px;
     height: 50px;
@@ -130,8 +127,11 @@ input[type="submit"]:hover {
     opacity: 0.9;
     margin: 10px;
 }
+.card-body > img {
+    height: 280px;
+}
 .card-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .card-subtitle {
     font-style: italic;
