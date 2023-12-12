@@ -10,7 +10,6 @@ header {
     width: 100%;
     display: inline-block;
     margin: auto;
-    height: 200px;
     background-image: url(./assets/nav_background.png);
     background-size: contain;
 }
@@ -28,32 +27,34 @@ h1 {
     max-width: 600px;
     margin: 2rem auto;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     position: relative;
     align-self: center;
-    margin-top: 0;
+    margin-top: 2rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     text-indent: 15px;
 }
 
 button {
-    width: 300px;
+    width: fit-content;
+    min-width: 200px;
+    background-color: transparent;
+    color: #2b1e1e;
     height: 50px;
-    position: absolute;
     margin: 1rem 1rem;
     padding: 15px;
     line-height: 10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
     top: 90px;
 }
 button:hover {
-    background-color: #FFFFFF;
-    box-shadow: 3px 2px 22px 1px rgba(1, 1, 1, 0.906);
+    box-shadow: 3px 2px 22px 1px rgba(243, 178, 59, 0.906);
+    background-color: #f1ce05;
   }
   input[type="submit"] {
     width: 300px;
@@ -62,7 +63,7 @@ button:hover {
     padding: 15px;
     line-height: 10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
     top: 90px;
@@ -74,7 +75,6 @@ form, label {
 label, input, select {
     margin: 0.3rem auto;
     font-size: 1.5rem;
-    border: 1px solid rgba(57, 56, 56, 0.519);
     border-radius: 10px;
 }
 input, select {
@@ -98,7 +98,7 @@ input[type="submit"] {
     height: 50px;
     line-height: 10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
     top: 90px;
@@ -149,5 +149,20 @@ input[type="submit"]:hover {
     }
     form {
        margin: auto;
+    }
+    button {
+        position: static;
+    }
+    .section-card-container {
+        width: fit-content;
+        margin: auto;
+    }
+    h1 {
+        margin-top: 0rem;
+        display: flex;
+        font-size: 2rem;
+    }
+    header {
+        display: block;
     }
 }
